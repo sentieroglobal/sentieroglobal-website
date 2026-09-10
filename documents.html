@@ -122,14 +122,20 @@
   .plain-card h4{ font-size:17px; margin-bottom:9px; color:var(--navy); }
   .plain-card p{ font-size:14px; color:var(--text-soft); }
   .plain-card .more{ display:inline-block; margin-top:14px; font-size:12.5px; font-weight:700; color:var(--gold); letter-spacing:0.03em; }
-  .service-card{ background:var(--cream); border:1px solid var(--border); border-radius:12px; padding:28px 24px; transition:transform .25s ease, border-color .25s ease, background .25s ease; position:relative; display:block; }
-  .service-card:hover{ transform:translateY(-6px); border-color:var(--gold); background:#fff; }
-  .service-card .num{ position:absolute; top:22px; right:22px; font-family:var(--serif); font-style:italic; color:var(--gold); font-size:14px; opacity:.7; }
-  .service-card .ic{ width:32px; height:32px; color:var(--navy); margin-bottom:14px; }
-  .service-card:hover .ic{ color:var(--gold); }
-  .service-card h4{ font-size:16px; margin-bottom:8px; }
-  .service-card p{ font-size:13.6px; color:var(--text-soft); }
-  .service-card .more{ display:inline-block; margin-top:12px; font-size:12px; font-weight:700; color:var(--gold); }
+  .service-card{ background:var(--cream); border:1px solid var(--border); border-radius:12px; padding:28px 24px; transition:transform .22s ease, border-color .22s ease, background .22s ease, box-shadow .22s ease; position:relative; display:flex; flex-direction:column; height:100%; text-align:left; box-shadow:0 1px 2px rgba(11,31,58,0.03); }
+  a.service-card{ cursor:pointer; }
+  .service-card:hover{ transform:translateY(-6px); border-color:var(--gold); background:#fff; box-shadow:0 16px 30px rgba(11,31,58,0.09); }
+  .service-card .num{ position:absolute; top:22px; right:24px; font-family:var(--serif); font-style:italic; color:var(--gold); font-size:14px; opacity:.7; }
+  .ic-badge{ width:50px; height:50px; border-radius:12px; background:var(--gold-soft); display:flex; align-items:center; justify-content:center; margin-bottom:18px; flex-shrink:0; transition:background .22s ease; }
+  .service-card:hover .ic-badge{ background:var(--gold); }
+  .service-card .ic{ width:24px; height:24px; color:var(--navy); }
+  .service-card:hover .ic{ color:#fff; }
+  .service-card h4{ font-size:16.5px; margin-bottom:9px; line-height:1.35; padding-right:28px; }
+  .service-card p{ font-size:13.8px; color:var(--text-soft); line-height:1.55; margin-bottom:0; }
+  .service-card .more{ display:inline-flex; align-items:center; gap:6px; margin-top:auto; padding-top:14px; border-top:1px dashed var(--border); font-size:12.5px; font-weight:700; color:var(--gold); }
+  .service-card .more svg{ transition:transform .22s ease; }
+  .service-card:hover .more svg{ transform:translateX(3px); }
+  .service-card .more.muted{ color:var(--text-soft); font-weight:600; font-style:italic; }
   .timeline-h{ display:flex; gap:0; position:relative; padding-top:10px; flex-wrap:wrap; }
   .timeline-h::before{ content:''; position:absolute; top:23px; left:0; right:0; height:1px; background:var(--border); }
   .t-step{ flex:1; min-width:180px; text-align:left; padding-right:20px; position:relative; margin-bottom:20px; }
