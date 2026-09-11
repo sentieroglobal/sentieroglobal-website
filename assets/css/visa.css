@@ -1,0 +1,16 @@
+/* =========================================================
+   SENTIERO GLOBAL VISA SERVICES — division-specific styles.
+   Loaded in addition to assets/css/global.css.
+   ========================================================= */
+
+.visa-icon-hero{ width:64px; height:64px; border-radius:16px; background:rgba(198,161,91,0.16); display:flex; align-items:center; justify-content:center; margin-bottom:20px; }
+.visa-icon-hero svg{ width:30px; height:30px; color:var(--gold); }
+
+.process-list{ counter-reset:step; display:grid; gap:14px; }
+.process-item{ counter-increment:step; display:flex; gap:16px; align-items:flex-start; background:#fff; border:1px solid var(--border); border-radius:12px; padding:18px 20px; }
+.process-item::before{ content:counter(step); font-family:var(--serif); font-style:italic; font-size:18px; color:var(--gold); border:1.5px solid var(--gold); border-radius:50%; width:34px; height:34px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.process-item h4{ font-size:15.5px; margin-bottom:4px; }
+.process-item p{ font-size:13.8px; color:var(--text-soft); }
+
+.suitable-list{ display:flex; flex-wrap:wrap; gap:10px; }
+.suitable-list span{ padding:9px 16px; border-radius:30px; background:var(--cream); border:1px solid var(--border); font-size:13px; color:var(--navy); font-weight:500; }

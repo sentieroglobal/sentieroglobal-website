@@ -1,0 +1,36 @@
+/* =========================================================
+   SENTIERO GLOBAL TOURS & TRAVELS — division-specific styles.
+   Loaded in addition to assets/css/global.css.
+   ========================================================= */
+
+.country-hero{ position:relative; background:var(--navy); min-height:420px; display:flex; align-items:flex-end; overflow:hidden; }
+.country-hero .ch-media{ position:absolute; inset:0; }
+.country-hero .ch-media img{ width:100%; height:100%; object-fit:cover; }
+.country-hero .ch-media .img-fallback{ position:absolute; inset:0; border-radius:0; border:none; }
+.country-hero::after{ content:''; position:absolute; inset:0; background:linear-gradient(180deg, rgba(11,31,58,0.15) 0%, rgba(11,31,58,0.88) 85%); }
+.country-hero .ch-content{ position:relative; z-index:1; padding:70px 0 46px; width:100%; }
+.country-hero h1{ font-size:clamp(36px,5.4vw,58px); color:var(--ivory); margin:8px 0 14px; }
+.country-hero p.lead{ color:rgba(247,243,234,0.82); font-size:16.5px; max-width:600px; }
+
+.highlight-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+@media (max-width:900px){ .highlight-grid{ grid-template-columns:repeat(2,1fr); } }
+@media (max-width:560px){ .highlight-grid{ grid-template-columns:1fr; } }
+.highlight-tile{ position:relative; border-radius:12px; overflow:hidden; aspect-ratio:4/3; background:var(--cream); }
+.highlight-tile img{ width:100%; height:100%; object-fit:cover; }
+.highlight-tile .img-fallback{ border-radius:12px; }
+.highlight-tile .ht-label{ position:absolute; left:0; right:0; bottom:0; padding:14px 16px; background:linear-gradient(0deg, rgba(11,31,58,0.85), transparent); color:var(--ivory); font-family:var(--serif); font-size:15.5px; }
+
+/* ---------- Package price block ----------
+   Non-developer editing note: change the amount in the <p class="package-price">
+   tag wherever it appears — nothing else needs to change. */
+.package-card{ background:var(--navy); border-radius:16px; padding:44px; color:var(--ivory); display:grid; grid-template-columns:1fr auto; gap:30px; align-items:center; }
+@media (max-width:760px){ .package-card{ grid-template-columns:1fr; text-align:center; } }
+.package-card h3{ color:var(--ivory); font-size:24px; margin-bottom:10px; }
+.package-card p.package-note{ color:rgba(247,243,234,0.72); font-size:14.5px; max-width:460px; }
+.package-price{ font-family:var(--serif); font-size:34px; color:var(--gold); font-weight:700; white-space:nowrap; }
+.package-price-label{ font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(247,243,234,0.55); margin-top:6px; }
+
+.why-travel-list{ display:grid; grid-template-columns:repeat(2,1fr); gap:16px 32px; }
+@media (max-width:700px){ .why-travel-list{ grid-template-columns:1fr; } }
+.why-travel-item{ display:flex; gap:12px; align-items:flex-start; font-size:14.5px; color:var(--text); }
+.why-travel-item svg{ color:var(--gold); width:18px; height:18px; margin-top:2px; flex-shrink:0; }
